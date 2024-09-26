@@ -25,7 +25,7 @@ export default function Home() {
     };
     if(certificateId && name && regNo && winningDate && winningPlace && imageUrl){
       console.log(formData)
-      axios.post("https://cb-kare-server.onrender.com/cerficate/add-certificate" ,formData).then((res)=>{
+      axios.post("https://cb-kare-server-za6b.onrender.com/cerficate/add-certificate" ,formData).then((res)=>{
         toast(res.data.message, {
           position: "top-right",
           autoClose: 5000,
